@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="411dp"
+    android:layout_height="731dp"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:layout_gravity="center"
+    tools:context=".Register">
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_height="300dp"
+        android:backgroundTint="@color/white" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:id="@+id/pb1"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:text="Register"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editText3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="30dp"
+        app:endIconMode="clear_text"
+        android:layout_marginRight="30dp"
+        android:hint="Enter Email"
+        app:startIconDrawable="@drawable/ic_mail"
+        app:startIconTint="@color/red"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editText4"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="30dp"
+        app:endIconMode="password_toggle"
+        android:layout_marginRight="30dp"
+        android:hint="Enter Password"
+        app:startIconDrawable="@drawable/ic_password"
+        app:startIconTint="@color/red"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textPassword"
+            android:id="@+id/Psw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="30dp"
+        app:endIconMode="password_toggle"
+        android:layout_marginRight="30dp"
+
+        app:startIconDrawable="@drawable/ic_password"
+        app:startIconTint="@color/red"
+        android:hint="Conform Password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textPassword"
+            android:id="@+id/cnfPsw"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/regbtn"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_width="310dp"
+        android:layout_gravity="center"
+
+        android:layout_height="70dp"
+        android:text="Register"
+        app:cornerRadius="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+    </Button>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

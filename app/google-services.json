@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "300465822186",
+    "firebase_url": "https://rku-ayurveda-default-rtdb.firebaseio.com",
+    "project_id": "rku-ayurveda",
+    "storage_bucket": "rku-ayurveda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300465822186:android:172bfc9121aef4476b3a93",
+        "android_client_info": {
+          "package_name": "com.ydpj.rkuayurveda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300465822186-s9cu90m0vs8a9q92st7estv34rhecbnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ydpj.rkuayurveda",
+            "certificate_hash": "6f27b7c75b93e21f0ccf2427099694b1f030bd80"
+          }
+        },
+        {
+          "client_id": "300465822186-udvccs3nrrodk40t1skqnrcj3j127mjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6-x6Gq777ccWNbe2nCTcJ2eskWWoC6hU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300465822186-udvccs3nrrodk40t1skqnrcj3j127mjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Reports">
+
+    <include layout="@layout/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+            style="@style/Widget.Material3.CardView.Outlined"
+            app:strokeColor="@color/red"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test Name"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="18dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of test"
+                    android:textSize="15sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="18dp"
+                    />
+
+            </LinearLayout>
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_download"
+                    android:backgroundTint="@color/white"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

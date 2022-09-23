@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/drawable/ic_logoapp4.xml" value="0.2385" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/drawable/ic_logoappdark.xml" value="0.2385" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/drawable/ic_medical_reportico.xml" value="0.2385" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/actionbar.xml" value="0.2" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/activity_contact.xml" value="0.2" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/activity_contact1.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/activity_contact_us.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/activity_contactus.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/activity_home.xml" value="0.176" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/activity_home_care_register.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/activity_register.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/homeactionbar.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/layout/menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/menu/menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/application/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.104" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/actionbar.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_about_us.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_book_appoinment.xml" value="0.21822916666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_contact.xml" value="0.1" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_doctor_details.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_home.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_home_care_register.xml" value="0.2" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_labtest.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_main2.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_reports.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/activity_select_doctor.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/app_bar_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/appbar.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/content_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/fragment_about.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/fragment_home.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/fragment_slideshow.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/homeactionbar.xml" value="0.1" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/layout/nav_header_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/menu/activity_main_drawer.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/menu/main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Rku Ayurveda/test app/application/app/src/main/res/menu/menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
