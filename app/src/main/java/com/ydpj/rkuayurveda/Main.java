@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,15 +16,16 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.ydpj.rkuayurveda.databinding.ActivityMainBinding;
 import com.ydpj.rkuayurveda.ui.About;
 import com.ydpj.rkuayurveda.ui.AboutViewModel;
 
 public class Main extends AppCompatActivity {
-
+    private TextView tvemail,tvname;
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-
+    public FirebaseAuth mauth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,8 +53,15 @@ public class Main extends AppCompatActivity {
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        mauth= FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mauth.getCurrentUser();
+        String Email=currentUser.getEmail();
+        String username=currentUser.getDisplayName();
+        tvemail=(TextView) findViewById(R.id.tvemail);
+        tvemail.setText(Email);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+
     }
 
     public void gotohomecare(View view) {
