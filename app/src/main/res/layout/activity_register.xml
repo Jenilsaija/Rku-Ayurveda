@@ -8,7 +8,14 @@
     android:weightSum="8"
     android:layout_gravity="center"
     tools:context=".Register">
-
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:id="@+id/pb1"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -27,14 +34,7 @@
                 android:layout_height="300dp"
                 android:backgroundTint="@color/white" />
 
-            <com.google.android.material.progressindicator.LinearProgressIndicator
-                android:layout_width="match_parent"
-                android:id="@+id/pb1"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:visibility="gone"
-                android:layout_gravity="center"
-                android:indeterminate="true" />
+
 
             <TextView
                 android:id="@+id/textView3"
@@ -102,7 +102,7 @@
 
                 app:startIconDrawable="@drawable/ic_password"
                 app:startIconTint="@color/red"
-                android:hint="Conform Password"
+                android:hint="Confirm Password"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
                     android:inputType="textPassword"

@@ -24,12 +24,14 @@
                 android:orientation="vertical">
                 <ImageView
                     android:layout_width="match_parent"
+                    android:id="@+id/doctorimage"
                     android:layout_margin="20dp"
                     android:layout_height="300dp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Doctor Name"
+                    android:id="@+id/doctorname"
+                    android:text="doctor name"
                     android:textSize="20sp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
@@ -39,7 +41,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Detaiils"
+                    android:text=""
+                    android:id="@+id/doctordetails"
                     android:textSize="15dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"

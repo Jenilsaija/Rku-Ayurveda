@@ -20,10 +20,11 @@
             android:orientation="vertical"
             >
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etname"
+
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginLeft="20dp"
+                app:startIconDrawable="@drawable/ic_name"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
@@ -33,16 +34,18 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/etname"
                     android:inputType="text"
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etdesses"
+
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
+                app:startIconDrawable="@drawable/ic_deses"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:hint="Desses"
@@ -50,13 +53,15 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/etdesses"
                     android:inputType="text"
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etemail"
+
                 android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/ic_mail"
                 android:layout_height="70dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
@@ -67,12 +72,13 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:id="@+id/etemail"
                     android:layout_height="match_parent"
                     android:inputType="textEmailAddress"
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etphonenum"
+
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginLeft="20dp"
@@ -81,15 +87,18 @@
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:hint="Phone Number"
+                app:startIconDrawable="@drawable/ic_phone"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/etphonenum"
+                    android:maxLength="10"
                     android:inputType="number"
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etaddress"
+
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginLeft="20dp"
@@ -98,15 +107,17 @@
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:hint="Home Address"
+                app:startIconDrawable="@drawable/ic_location"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:id="@+id/etaddress"
                     android:layout_height="match_parent"
                     android:inputType="text"
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etnoofday"
+
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginLeft="20dp"
@@ -119,6 +130,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/etnoofday"
                     android:inputType="text"
                     />
             </com.google.android.material.textfield.TextInputLayout>

@@ -43,6 +43,8 @@ public class BookAppoinment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_appoinment);
         Toolbar tbar=(Toolbar) findViewById(R.id.toolbar);
+        Intent i =getIntent();
+        String d_name=i.getExtras().getString("doctorname");
         btnBook=(Button)findViewById(R.id.btnbook);
         pb1=(ProgressBar)findViewById(R.id.pb1);
         etDoctor=(com.google.android.material.textfield.TextInputEditText) findViewById(R.id.etDoctor);
@@ -85,6 +87,7 @@ public class BookAppoinment extends AppCompatActivity {
                     FirebaseAuth mauth= FirebaseAuth.getInstance();
                     FirebaseUser currentUser = mauth.getCurrentUser();
                     myref.child(id).child("User").setValue(currentUser.getEmail().toString());
+                    myref.child(id).child("Doctor").setValue(d_name);
                     myref.child(id).child("Status").setValue("Pending");
                     myref.child(id).child("etName").setValue(name);
                     myref.child(id).child("etphonenum").setValue(Phonenum);
@@ -101,5 +104,16 @@ public class BookAppoinment extends AppCompatActivity {
 
             }
         });
+
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Intent i =getIntent();
+        String d_name=i.getExtras().getString("doctorname");
+        etDoctor=(com.google.android.material.textfield.TextInputEditText) findViewById(R.id.etDoctor);
+        etDoctor.setText(d_name);
     }
 }

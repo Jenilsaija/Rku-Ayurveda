@@ -53,6 +53,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_name"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
@@ -73,6 +74,7 @@
             android:layout_height="wrap_content"
             app:endIconMode="clear_text"
             android:layout_marginLeft="20dp"
+            app:startIconDrawable="@drawable/ic_phone"
             android:layout_marginRight="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -81,6 +83,7 @@
                 android:layout_height="60dp"
                 android:text=""
                 android:hint="Phone number"
+                android:maxLength="10"
                 android:id="@+id/etphonenum"
                 android:inputType="number"
                 tools:ignore="TouchTargetSizeCheck" />
@@ -92,6 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_date"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -113,6 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_location"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -134,6 +139,7 @@
             app:endIconMode="clear_text"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_age"
             android:layout_marginRight="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
