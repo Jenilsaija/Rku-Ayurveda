@@ -43,8 +43,6 @@ public class BookAppoinment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_appoinment);
         Toolbar tbar=(Toolbar) findViewById(R.id.toolbar);
-        Intent i =getIntent();
-        String d_name=i.getExtras().getString("doctorname");
         btnBook=(Button)findViewById(R.id.btnbook);
         pb1=(ProgressBar)findViewById(R.id.pb1);
         etDoctor=(com.google.android.material.textfield.TextInputEditText) findViewById(R.id.etDoctor);
@@ -68,6 +66,7 @@ public class BookAppoinment extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 pb1.setVisibility(View.VISIBLE);
+                String d_name=etDoctor.getText().toString();
                 String name=etname.getText().toString();
                 String Phonenum=etphonenum.getText().toString();
                 String Date=etDate.getText().toString();
@@ -78,16 +77,13 @@ public class BookAppoinment extends AppCompatActivity {
                 if (TextUtils.isEmpty(name)||TextUtils.isEmpty(Phonenum)||TextUtils.isEmpty(Date)||TextUtils.isEmpty(address)||TextUtils.isEmpty(age)){
                     pb1.setVisibility(View.GONE);
                     Toast.makeText(BookAppoinment.this, "Please Fill Up All Details", Toast.LENGTH_SHORT).show();
-                }else if (Phonenum.length()!=10) {
-                    pb1.setVisibility(View.GONE);
-                    Toast.makeText(BookAppoinment.this, "Please Enter 10 Digit Mobile Number", Toast.LENGTH_SHORT).show();
                 }else {
                     myref = database.getReference("Appoinment");
                     String id=myref.push().getKey();
                     FirebaseAuth mauth= FirebaseAuth.getInstance();
                     FirebaseUser currentUser = mauth.getCurrentUser();
                     myref.child(id).child("User").setValue(currentUser.getEmail().toString());
-                    myref.child(id).child("Doctor").setValue(d_name);
+                    myref.child(id).child("Doctor/Test").setValue(d_name);
                     myref.child(id).child("Status").setValue("Pending");
                     myref.child(id).child("etName").setValue(name);
                     myref.child(id).child("etphonenum").setValue(Phonenum);
@@ -112,7 +108,7 @@ public class BookAppoinment extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Intent i =getIntent();
-        String d_name=i.getExtras().getString("doctorname");
+        String d_name=i.getExtras().getString("doctor/labtest_name");
         etDoctor=(com.google.android.material.textfield.TextInputEditText) findViewById(R.id.etDoctor);
         etDoctor.setText(d_name);
     }

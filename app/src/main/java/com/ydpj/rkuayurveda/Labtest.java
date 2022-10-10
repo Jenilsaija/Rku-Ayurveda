@@ -23,8 +23,27 @@ public class Labtest extends AppCompatActivity {
         });
     }
 
-    public void gotoAppoinment(View view) {
+    public void gotoAppoinmentasBG(View view) {
         Intent i=new Intent(Labtest.this,BookAppoinment.class);
+        i.putExtra("doctor/labtest_name","Blood Test");
+        startActivity(i);
+    }
+
+    public void gotoAppoinmentasET(View view) {
+        Intent i=new Intent(Labtest.this,BookAppoinment.class);
+        i.putExtra("doctor/labtest_name","ESR Test");
+        startActivity(i);
+    }
+
+    public void gotoAppoinmentasBS(View view) {
+        Intent i=new Intent(Labtest.this,BookAppoinment.class);
+        i.putExtra("doctor/labtest_name","Sugar Test");
+        startActivity(i);
+    }
+
+    public void gotoAppoinmentasHT(View view) {
+        Intent i=new Intent(Labtest.this,BookAppoinment.class);
+        i.putExtra("doctor/labtest_name","HIV Test");
         startActivity(i);
     }
 }

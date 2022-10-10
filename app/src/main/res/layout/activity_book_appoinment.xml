@@ -33,7 +33,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            app:endIconMode="clear_text"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
@@ -42,7 +41,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:hint="Selected Docter/Lab Test"
-                android:text=""
+                android:cursorVisible="false"
+                android:editable="false"
                 android:id="@+id/etDoctor"
                 tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>

@@ -34,7 +34,7 @@ public class Doctor_details extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         i =getIntent();
-        String d_name=i.getExtras().getString("doctorname");
+        String d_name=i.getExtras().getString("doctor/labtest_name");
         doctorname=(TextView) findViewById(R.id.doctorname);
         doctorimage=(ImageView) findViewById(R.id.doctorimage);
         doctordetails=(TextView) findViewById(R.id.doctordetails);
@@ -75,9 +75,9 @@ public class Doctor_details extends AppCompatActivity {
 
     public void gotoAppoinment(View view) {
         i=getIntent();
-        String d_name=i.getExtras().getString("doctorname");
+        String d_name=i.getExtras().getString("doctor/labtest_name");
         Intent i=new Intent(Doctor_details.this,BookAppoinment.class);
-        i.putExtra("doctorName",d_name);
+        i.putExtra("doctor/labtest_name",d_name);
         startActivity(i);
     }
 }
