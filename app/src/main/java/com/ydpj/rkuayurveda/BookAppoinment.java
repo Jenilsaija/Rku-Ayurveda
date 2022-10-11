@@ -37,14 +37,14 @@ public class BookAppoinment extends AppCompatActivity {
     private Button btnBook;
     private FirebaseDatabase database;
     private DatabaseReference myref;
-    private ProgressBar pb1;
+    private com.google.android.material.progressindicator.LinearProgressIndicator pb1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_appoinment);
         Toolbar tbar=(Toolbar) findViewById(R.id.toolbar);
         btnBook=(Button)findViewById(R.id.btnbook);
-        pb1=(ProgressBar)findViewById(R.id.pb1);
+        pb1=(com.google.android.material.progressindicator.LinearProgressIndicator)findViewById(R.id.pb1);
         etDoctor=(com.google.android.material.textfield.TextInputEditText) findViewById(R.id.etDoctor);
         etname=(com.google.android.material.textfield.TextInputEditText) findViewById(R.id.etname);
         etphonenum=(com.google.android.material.textfield.TextInputEditText) findViewById(R.id.etphonenum);

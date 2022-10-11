@@ -54,6 +54,7 @@
             android:layout_marginBottom="10dp"
             app:endIconMode="clear_text"
             app:startIconDrawable="@drawable/ic_name"
+            app:startIconTint="@color/red"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
@@ -76,6 +77,7 @@
             android:layout_marginLeft="20dp"
             app:startIconDrawable="@drawable/ic_phone"
             android:layout_marginRight="20dp"
+            app:startIconTint="@color/red"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -99,6 +101,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            app:startIconTint="@color/red"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
 
@@ -120,6 +123,7 @@
             app:startIconDrawable="@drawable/ic_location"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+            app:startIconTint="@color/red"
             android:layout_marginRight="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -141,6 +145,7 @@
             android:layout_marginTop="10dp"
             app:startIconDrawable="@drawable/ic_age"
             android:layout_marginRight="20dp"
+            app:startIconTint="@color/red"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -160,6 +165,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:entries="@array/Gender"
+
                 android:id="@+id/spinnergender"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"

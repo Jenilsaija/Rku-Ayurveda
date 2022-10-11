@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        >
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card"
             android:layout_width="match_parent"
@@ -36,33 +36,28 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Test Name"
-                    android:textStyle="bold"
+                    android:text="If you Will Not Reciving Document in mail in 2-3 hours then Contact US."
                     android:textSize="20sp"
                     android:layout_marginTop="12dp"
                     android:layout_marginStart="18dp"
                     />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Date of test"
-                    android:textSize="15sp"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginStart="18dp"
-                    />
+
 
             </LinearLayout>
-                <ImageButton
-                    android:layout_weight="1"
-                    android:id="@+id/dwnbtn"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_download"
-                    android:backgroundTint="@color/white"/>
+
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-    </LinearLayout>
+        </LinearLayout>
+    <Button
+        android:id="@+id/btngotocontact"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"
+        android:text="Contact Us"
+        app:cornerRadius="40dp"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+    </Button>
 </androidx.appcompat.widget.LinearLayoutCompat>

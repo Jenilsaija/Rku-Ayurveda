@@ -9,6 +9,14 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:id="@+id/pb1"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,6 +33,7 @@
                 android:layout_height="70dp"
                 android:layout_marginLeft="20dp"
                 app:startIconDrawable="@drawable/ic_name"
+                app:startIconTint="@color/red"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
@@ -45,6 +54,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
+                app:startIconTint="@color/red"
                 app:startIconDrawable="@drawable/ic_deses"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
@@ -66,6 +76,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
+                app:startIconTint="@color/red"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:hint="Email"
@@ -84,6 +95,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
+                app:startIconTint="@color/red"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:hint="Phone Number"
@@ -106,6 +118,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
+                app:startIconTint="@color/red"
                 android:hint="Home Address"
                 app:startIconDrawable="@drawable/ic_location"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">

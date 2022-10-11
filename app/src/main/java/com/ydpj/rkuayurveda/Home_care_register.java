@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Home_care_register extends AppCompatActivity {
 
     private  com.google.android.material.textfield.TextInputEditText etname,etdesses,etemail,etphonenum,etaddress,etnoofday;
-
+    private com.google.android.material.progressindicator.LinearProgressIndicator pb1;
     private Button btnhcreg;
     private FirebaseDatabase database;
     private DatabaseReference myref;
@@ -30,6 +30,7 @@ public class Home_care_register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_care_register);
         Toolbar tbar=(Toolbar) findViewById(R.id.toolbar);
+        pb1=(com.google.android.material.progressindicator.LinearProgressIndicator)findViewById(R.id.pb1);
         btnhcreg=(Button)findViewById(R.id.btnhcreg);
         etname =(com.google.android.material.textfield.TextInputEditText)findViewById(R.id.etname);
         etdesses =(com.google.android.material.textfield.TextInputEditText)findViewById(R.id.etdesses);
@@ -49,6 +50,7 @@ public class Home_care_register extends AppCompatActivity {
         btnhcreg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                pb1.setVisibility(View.VISIBLE);
                 String name=etname.getText().toString();
                 String desses=etdesses.getText().toString();
                 String email=etemail.getText().toString();
@@ -57,6 +59,7 @@ public class Home_care_register extends AppCompatActivity {
                 String noofday=etnoofday.getText().toString();
 
                 if (TextUtils.isEmpty(name)||TextUtils.isEmpty(desses)||TextUtils.isEmpty(email)||TextUtils.isEmpty(phonenum)||TextUtils.isEmpty(address)||TextUtils.isEmpty(noofday)){
+                    pb1.setVisibility(View.GONE);
                     Toast.makeText(Home_care_register.this, "Please Fill Up All Details", Toast.LENGTH_SHORT).show();
                 }else {
                     myref = database.getReference("HomeCareRegistration");
@@ -70,6 +73,7 @@ public class Home_care_register extends AppCompatActivity {
                     myref.child(id).child("etphonenum").setValue(phonenum);
                     myref.child(id).child("etaddress").setValue(address);
                     myref.child(id).child("etnoofday").setValue(noofday);
+                    pb1.setVisibility(View.GONE);
                     Toast.makeText(Home_care_register.this, "Successfully home care registration", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(Home_care_register.this, Main.class);
                     startActivity(i);
